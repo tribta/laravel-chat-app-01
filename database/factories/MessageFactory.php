@@ -18,8 +18,8 @@ class MessageFactory extends Factory
     {
         return [
             'body' => $this->faker->sentence(),
-            'conversation_id' => null, // gán trong Seeder
-            'user_id' => null, // gán trong Seeder
+            'conversation_id' => null,
+            'user_id' => null
         ];
     }
 }

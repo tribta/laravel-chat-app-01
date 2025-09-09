@@ -18,8 +18,8 @@ class ConversationFactory extends Factory
     {
         return [
             'name' => $this->faker->optional()->words(3, true),
-            'is_direct' => $this->faker->boolean(30), // 30% direct
-            'created_by' => null, // gán trong Seeder
+            'is_direct' => $this->faker->boolean(30),
+            'created_by' => null
         ];
     }
 }

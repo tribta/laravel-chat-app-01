@@ -1,7 +1,7 @@
 import { queryParams, type RouteQueryOptions, type RouteDefinition, type RouteFormDefinition, applyUrlDefaults } from './../../wayfinder'
 /**
 * @see \App\Http\Controllers\ConversationController::index
- * @see app/Http/Controllers/ConversationController.php:21
+ * @see app/Http/Controllers/ConversationController.php:14
  * @route '/chat'
  */
 export const index = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -16,7 +16,7 @@ index.definition = {
 
 /**
 * @see \App\Http\Controllers\ConversationController::index
- * @see app/Http/Controllers/ConversationController.php:21
+ * @see app/Http/Controllers/ConversationController.php:14
  * @route '/chat'
  */
 index.url = (options?: RouteQueryOptions) => {
@@ -25,7 +25,7 @@ index.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\ConversationController::index
- * @see app/Http/Controllers/ConversationController.php:21
+ * @see app/Http/Controllers/ConversationController.php:14
  * @route '/chat'
  */
 index.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -34,7 +34,7 @@ index.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\ConversationController::index
- * @see app/Http/Controllers/ConversationController.php:21
+ * @see app/Http/Controllers/ConversationController.php:14
  * @route '/chat'
  */
 index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -44,7 +44,7 @@ index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\ConversationController::index
- * @see app/Http/Controllers/ConversationController.php:21
+ * @see app/Http/Controllers/ConversationController.php:14
  * @route '/chat'
  */
     const indexForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -54,7 +54,7 @@ index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\ConversationController::index
- * @see app/Http/Controllers/ConversationController.php:21
+ * @see app/Http/Controllers/ConversationController.php:14
  * @route '/chat'
  */
         indexForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -63,7 +63,7 @@ index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\ConversationController::index
- * @see app/Http/Controllers/ConversationController.php:21
+ * @see app/Http/Controllers/ConversationController.php:14
  * @route '/chat'
  */
         indexForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -79,7 +79,7 @@ index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     index.form = indexForm
 /**
 * @see \App\Http\Controllers\ConversationController::show
- * @see app/Http/Controllers/ConversationController.php:43
+ * @see app/Http/Controllers/ConversationController.php:39
  * @route '/chat/{conversation}'
  */
 export const show = (args: { conversation: number | { id: number } } | [conversation: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -94,7 +94,7 @@ show.definition = {
 
 /**
 * @see \App\Http\Controllers\ConversationController::show
- * @see app/Http/Controllers/ConversationController.php:43
+ * @see app/Http/Controllers/ConversationController.php:39
  * @route '/chat/{conversation}'
  */
 show.url = (args: { conversation: number | { id: number } } | [conversation: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions) => {
@@ -127,7 +127,7 @@ show.url = (args: { conversation: number | { id: number } } | [conversation: num
 
 /**
 * @see \App\Http\Controllers\ConversationController::show
- * @see app/Http/Controllers/ConversationController.php:43
+ * @see app/Http/Controllers/ConversationController.php:39
  * @route '/chat/{conversation}'
  */
 show.get = (args: { conversation: number | { id: number } } | [conversation: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -136,7 +136,7 @@ show.get = (args: { conversation: number | { id: number } } | [conversation: num
 })
 /**
 * @see \App\Http\Controllers\ConversationController::show
- * @see app/Http/Controllers/ConversationController.php:43
+ * @see app/Http/Controllers/ConversationController.php:39
  * @route '/chat/{conversation}'
  */
 show.head = (args: { conversation: number | { id: number } } | [conversation: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -146,7 +146,7 @@ show.head = (args: { conversation: number | { id: number } } | [conversation: nu
 
     /**
 * @see \App\Http\Controllers\ConversationController::show
- * @see app/Http/Controllers/ConversationController.php:43
+ * @see app/Http/Controllers/ConversationController.php:39
  * @route '/chat/{conversation}'
  */
     const showForm = (args: { conversation: number | { id: number } } | [conversation: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -156,7 +156,7 @@ show.head = (args: { conversation: number | { id: number } } | [conversation: nu
 
             /**
 * @see \App\Http\Controllers\ConversationController::show
- * @see app/Http/Controllers/ConversationController.php:43
+ * @see app/Http/Controllers/ConversationController.php:39
  * @route '/chat/{conversation}'
  */
         showForm.get = (args: { conversation: number | { id: number } } | [conversation: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -165,7 +165,7 @@ show.head = (args: { conversation: number | { id: number } } | [conversation: nu
         })
             /**
 * @see \App\Http\Controllers\ConversationController::show
- * @see app/Http/Controllers/ConversationController.php:43
+ * @see app/Http/Controllers/ConversationController.php:39
  * @route '/chat/{conversation}'
  */
         showForm.head = (args: { conversation: number | { id: number } } | [conversation: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({

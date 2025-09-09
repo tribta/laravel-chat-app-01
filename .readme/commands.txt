@@ -1,0 +1,9 @@
+php artisan make:model Conversation -m
+
+php artisan make:model Message -m     
+
+php artisan make:migration create_conversation_user_table 
+
+php artisan make:factory ConversationFactory  
+
+php artisan make:factory MessageFactory

@@ -1,8 +1,8 @@
 import { queryParams, type RouteQueryOptions, type RouteDefinition, type RouteFormDefinition } from './../../../../wayfinder'
 /**
 * @see \App\Http\Controllers\MessageController::store
- * @see app/Http/Controllers/MessageController.php:0
- * @route '/messages'
+ * @see app/Http/Controllers/MessageController.php:12
+ * @route '/message'
  */
 export const store = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
     url: store.url(options),
@@ -11,13 +11,13 @@ export const store = (options?: RouteQueryOptions): RouteDefinition<'post'> => (
 
 store.definition = {
     methods: ["post"],
-    url: '/messages',
+    url: '/message',
 } satisfies RouteDefinition<["post"]>
 
 /**
 * @see \App\Http\Controllers\MessageController::store
- * @see app/Http/Controllers/MessageController.php:0
- * @route '/messages'
+ * @see app/Http/Controllers/MessageController.php:12
+ * @route '/message'
  */
 store.url = (options?: RouteQueryOptions) => {
     return store.definition.url + queryParams(options)
@@ -25,8 +25,8 @@ store.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\MessageController::store
- * @see app/Http/Controllers/MessageController.php:0
- * @route '/messages'
+ * @see app/Http/Controllers/MessageController.php:12
+ * @route '/message'
  */
 store.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
     url: store.url(options),
@@ -35,8 +35,8 @@ store.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
 
     /**
 * @see \App\Http\Controllers\MessageController::store
- * @see app/Http/Controllers/MessageController.php:0
- * @route '/messages'
+ * @see app/Http/Controllers/MessageController.php:12
+ * @route '/message'
  */
     const storeForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
         action: store.url(options),
@@ -45,8 +45,8 @@ store.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
 
             /**
 * @see \App\Http\Controllers\MessageController::store
- * @see app/Http/Controllers/MessageController.php:0
- * @route '/messages'
+ * @see app/Http/Controllers/MessageController.php:12
+ * @route '/message'
  */
         storeForm.post = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
             action: store.url(options),
